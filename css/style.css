@@ -491,7 +491,7 @@ h3.my-profession
     margin-top: 10px;
 }
 
-.about .about-content .skills
+/* .about .about-content .skills
 {
     flex: 0 0 40%;
     max-width: 40%;
@@ -511,6 +511,39 @@ h3.my-profession
     font-size: 16px;
     color: var(--text-black-900);
     text-transform: capitalize;
+} */
+
+.about .about-content .skills {
+    flex: 0 0 40%;
+    /* Change to 100% to take the full width if needed */
+    max-width: 40%;
+    /* Change to 100% to take the full width if needed */
+    margin-top: 40px;
+    display: flex;
+    /* Add flex display to the skills container */
+    justify-content: space-between;
+    /* This will space out the skill-item children */
+    flex-wrap: wrap;
+    /* This allows the skill items to wrap if the screen is too small */
+    
+}
+
+.about .about-content .skills .skill-item {
+    flex: 0 0 48%;
+    /* Adjust to use less than half the parent container's width */
+    max-width: 48%;
+    /* Adjust to use less than half the parent container's width */
+    /* Rest of your styles */
+    padding-right: 10px;
+}
+
+.about .about-content .skills .skill-item h5 {
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+    /* Rest of your styles */
 }
 
 /* .about .about-content .skills .skill-item .progress
